@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice Event Handlers</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="resetstyle.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="nav-main">
+      <div
+        class="btn-toggle-nav"
+        onmouseover="toggleNav()"
+        onmouseout="toggleNavClose()"
+      ></div>
+      <ul>
+        <li><div>Color Picker</div></li>
+      </ul>
+    </nav>
+
+    <aside
+      class="nav-sidebar"
+      onmouseover="toggleNav()"
+      onmouseout="toggleNavClose() "
+    >
+      <ul>
+        <li><span>Choose color:</span></li>
+        <li><a href="#" onclick="toggleClrHome()">Home</a></li>
+
+        <li><a href="#" onclick="toggleClrRed()">Red</a></li>
+        <li><a href="#" onclick="toggleClrOrg()">Orange</a></li>
+        <li><a href="#" onclick="toggleClrPrp()">Purple</a></li>
+        <li><a href="#" onclick="toggleClrGrn()">Green</a></li>
+      </ul>
+    </aside>
+  </body>
+  <script src="script.js"></script>
+</html>
